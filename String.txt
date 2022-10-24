@@ -1,0 +1,165 @@
+String 
+
+brian = "Hello life!"
+
+practice
+
+caesar = "Graham"
+praline = "John"
+viking = "Teresa"
+
+
+# Put your variables above this line
+
+print caesar
+print praline
+print viking
+
+----------------------------------------
+Escaping characters
+
+'This isn\'t flying, this is falling with style!'
+
+----------------------------------------
+
+Access by Index
+
+"""
+The string "PYTHON" has six characters,
+numbered 0 to 5, as shown below:
+
++---+---+---+---+---+---+
+| P | Y | T | H | O | N |
++---+---+---+---+---+---+
+  0   1   2   3   4   5
+
+So if you wanted "Y", you could just type
+"PYTHON"[1] (always start counting from 0!)
+"""
+fifth_letter = "MONTY"[4]
+
+print fifth_letter
+
+----------------------------------------
+
+String methods
+
+parrot = "Norwegian Blue"
+print len(parrot)
+
+=14
+
+
+----------------------------------------
+
+lower()
+
+parrot = "Norwegian Blue"
+
+print parrot.lower()
+----------------------------------------
+
+upper()
+
+parrot = "norwegian blue"
+
+print parrot.upper()
+
+----------------------------------------
+str()
+
+pi = 3.14
+print str(pi)
+
+----------------------------------------
+Dot notation
+
+ministry = "The Ministry of Silly Walks"
+
+print len(ministry)
+print  ministry.upper()
+
+----------------------------------------
+printing variables
+
+"""Assign the string "Ping!" to
+the variable the_machine_goes on
+line 5, then print it out on line 6!"""
+
+the_machine_goes = "Ping!"
+print the_machine_goes
+
+
+----------------------------------------
+String Concatenation
+
+print "Spam "+"and "+"eggs"
+
+----------------------------------------
+Explicit String Conversion
+
+print "The value of pi is around " +str(3.14)
+
+----------------------------------------
+
+String Formatting with %, Part 2
+
+name = "Alex"
+quest = "Teaching Python"
+color = "Blue"
+
+print "Ah, so your name is %s, your quest is %s, " \
+"and your favorite color is %s." % (name, quest, color)
+
+----------------------------------------
+
+And Now, For Something Completely Familiar
+
+my_string ="Hello"
+print len(my_string)
+print my_string.upper()
+
+----------------------------------------
+
+Getting the Current Date and Time
+
+
+from datetime import datetime
+
+now = datetime.now()
+print now
+----------------------------------------
+
+Extracting Information
+
+
+from datetime import datetime
+
+now = datetime.now()
+print now
+print now.year
+print now.month
+print now.day
+----------------------------------------  
+Hot Date
+
+from datetime import datetime
+now = datetime.now()
+
+print '%02d/%02d/%04d' % (now.month, now.day, now.year)
+----------------------------------------
+
+Pretty Time
+
+from datetime import datetime
+now = datetime.now()
+
+print '%02d:%02d:%02d' % (now.hour, now.minute, now.second)
+----------------------------------------
+
+Grand Finale
+
+from datetime import datetime
+now = datetime.now()
+
+print '%02d/%02d/%04d' % (now.day, now.month, now.year) + ' '+'%02d:%02d:%02d' % (now.hour, now.minute, now.second) 
